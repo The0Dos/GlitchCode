@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.beta_hack">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Beta_hack">
+        <activity android:name=".result1"></activity>
+        <activity android:name=".card_swipe3" />
+        <activity android:name=".case3_3" />
+        <activity android:name=".case3" />
+        <activity android:name=".card_swipe2" />
+        <activity android:name=".case2_2" />
+        <activity android:name=".case2" />
+        <activity android:name=".card_swipe1" />
+        <activity android:name=".case1_1" />
+        <activity android:name=".case1" />
+        <activity android:name=".wv1_1" />
+        <activity android:name=".puzzle_ac" />
+        <activity android:name=".login_screen" />
+        <activity android:name=".level1_1" />
+        <activity android:name=".ac_fr" />
+        <activity android:name=".onboard_ac" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

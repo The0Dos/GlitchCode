@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".case1"
+    android:background="@drawable/back_main"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="294dp"
+        android:layout_height="234dp"
+        android:src="@drawable/amico"/>
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="277dp"
+        android:layout_height="46dp"
+        android:src="@drawable/difficult1"
+        android:gravity="left"/>
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Как не попасть на скам в интернете"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:fontFamily="@font/font_main"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Бесплатный курс о том, как получать  там, где другие их теряют. Быстрые уроки"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:fontFamily="@font/font_main"
+        android:gravity="center"
+        />
+    <TextView
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="openCase1_1"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="324dp"
+        android:layout_height="46dp"
+        android:background="@drawable/btn_back_red"
+        android:layout_gravity="center"
+        android:text="Начать учиться"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/font_main"/>
+
+
+
+
+
+</LinearLayout>

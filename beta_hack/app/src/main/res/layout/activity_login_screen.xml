@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_screen"
+    android:background="@drawable/back_main"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:counterEnabled="true"
+
+        app:boxStrokeColor="@color/black"
+        app:startIconDrawable="@drawable/left_ava"
+        android:id="@+id/login_et"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="20dp"
+
+
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        android:hint=""
+        app:endIconMode="clear_text"
+        android:textColorHint="#8C9098"
+
+        style="@style/EditText"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:textColorHint="#8C9098"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Логин"
+            android:drawableLeft="@drawable/left_ava"
+            android:background="@drawable/pryam_grey1"
+            android:lines="1"
+            android:id = "@+id/auth_email"
+            android:maxLength="21"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:counterEnabled="true"
+        app:boxStrokeColor="@color/black"
+        app:startIconDrawable="@drawable/lock"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pass_et"
+        app:layout_constraintTop_toBottomOf="@id/login_et"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        android:hint=""
+        app:endIconMode="password_toggle"
+        android:textColorHint="#8C9098"
+        style="@style/EditText"
+        android:layout_width="280dp"
+        android:layout_height="70dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:textColorHint="#8C9098"
+            android:hint="Пароль"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:background="@drawable/pryam_grey1"
+            android:lines="1"
+            android:id = "@+id/auth_password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        app:boxStrokeColor="@color/black"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pass_et"
+
+        android:layout_gravity="center"
+        android:onClick="openOnBoard"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:id = "@+id/auth"
+        android:background="@drawable/btn_shape"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Войти"/>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/auth"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+        <TextView
+
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#8C9098"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Нет аккаунта?"
+            android:textSize="16sp"/>
+        <TextView
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Регистрация"
+            android:textSize="16sp"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

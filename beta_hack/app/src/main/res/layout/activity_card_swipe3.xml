@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".card_swipe3"
+    android:background="@drawable/back_main">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="@drawable/btn_back_red"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:fontFamily="@font/font_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dislike"
+            android:text="нет"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="@drawable/btn_back_red"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:fontFamily="@font/font_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="да"
+            android:layout_margin="5dp"
+            android:id="@+id/like"/>
+
+    </LinearLayout>
+
+    <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line1"
+        app:rotation_degrees="15.0"/>
+
+</RelativeLayout>

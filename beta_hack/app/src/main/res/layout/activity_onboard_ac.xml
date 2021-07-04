@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboard_ac"
+    android:background="@drawable/back_main">
+    
+    <androidx.viewpager.widget.ViewPager
+
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/linearl"
+        android:layout_below="@id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp">
+
+
+        <TextView
+            android:layout_weight="1"
+
+            android:id="@+id/tv_in_ln"
+            android:layout_width="100dp"
+            android:layout_height="80dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/font_main"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+
+        android:textColor="@color/colorWhite"
+        android:visibility="invisible"
+        android:clickable="true"
+        android:focusable="true"
+        android:text = "BACK"
+        android:id="@+id/prevBtn"
+        android:layout_width="100dp"
+        android:layout_height="80dp"/>
+
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/font_main"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+
+        android:visibility="visible"
+        android:textColor="@color/colorWhite"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="NEXT"
+        android:textSize="20sp"
+        android:id="@+id/nextBtn"
+        android:layout_width="100dp"
+        android:layout_height="80dp"/>
+
+
+</RelativeLayout>
