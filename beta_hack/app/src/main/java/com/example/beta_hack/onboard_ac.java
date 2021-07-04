@@ -122,7 +122,7 @@ public class onboard_ac extends AppCompatActivity {
                         public void onClick(View v) {
 
                             if (mNextBtn.getText().toString().equals("Finish")){
-                                Intent intent = new Intent(onboard_ac.this, ac_fr.class );
+                                Intent intent = new Intent(onboard_ac.this, pred_story.class );
                                 startActivity(intent);
                                 finish();
                                 sp = getSharedPreferences("Launch1", Context.MODE_PRIVATE);

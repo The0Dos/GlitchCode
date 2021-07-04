@@ -71,7 +71,7 @@ public class ProgressFragment extends Fragment {
         puzzle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), puzzle_ac.class);
+                Intent intent = new Intent(getActivity(), wv1_4.class);
                 startActivity(intent);
             }
         });

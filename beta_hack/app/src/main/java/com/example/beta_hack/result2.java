@@ -6,25 +6,23 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.provider.Telephony;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class result1 extends AppCompatActivity {
+public class result2 extends AppCompatActivity {
     TextView result1;
     int right = 0, left = 0, fall = 0, correct = 5;
     ImageView iv;
-    SharedPreferences sp11, sp1;
+    SharedPreferences sp, sp1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result1);
-
-
+        setContentView(R.layout.activity_result2);
         result1 = (TextView) findViewById(R.id.res_tv);
         iv = (ImageView) findViewById(R.id.iv);
-        SharedPreferences sp111 = getApplication().getSharedPreferences("count_left1", Context.MODE_PRIVATE);
+        SharedPreferences sp111 = getApplication().getSharedPreferences("count_left11", Context.MODE_PRIVATE);
         left = sp111.getInt("left_counter", -1);
         if(left == 5){
             result1.setText("5 / 5");
@@ -50,12 +48,12 @@ public class result1 extends AppCompatActivity {
     }
 
     public void openPuzzle(View view) {
-        Intent intent = new Intent(result1.this, puzzle_ac.class);
+        Intent intent = new Intent(result2.this, puzzle2.class);
         startActivity(intent);
     }
 
     public void open3d(View view) {
-        Intent intent = new Intent(result1.this, wv1_1.class);
+        Intent intent = new Intent(result2.this, wv2_2.class);
         startActivity(intent);
     }
 }

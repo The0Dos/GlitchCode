@@ -24,7 +24,7 @@ EditText etl, etp;
         SharedPreferences sp = getApplicationContext().getSharedPreferences("Launch1", Context.MODE_PRIVATE);
         int launch = sp.getInt("Launch", -1);
         if(launch == 1){
-            Intent intent = new Intent(login_screen.this, ac_fr.class);
+            Intent intent = new Intent(login_screen.this, pred_story.class);
             startActivity(intent);
         }else {
             Intent intent = new Intent(login_screen.this, onboard_ac.class);

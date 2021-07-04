@@ -11,7 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Beta_hack">
-        <activity android:name=".result1"></activity>
+        <activity android:name=".wv1_4"></activity>
+        <activity android:name=".pred_story" />
+        <activity android:name=".wv3_3" />
+        <activity android:name=".wv2_2" />
+        <activity android:name=".puzzle3" />
+        <activity android:name=".puzzle2" />
+        <activity android:name=".result3" />
+        <activity android:name=".result2" />
+        <activity android:name=".result1" />
         <activity android:name=".card_swipe3" />
         <activity android:name=".case3_3" />
         <activity android:name=".case3" />

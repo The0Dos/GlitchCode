@@ -3,15 +3,15 @@
 
     <item
         android:id="@+id/item1"
-        android:title="Home"
+        android:title="Уровни"
         android:icon="@mipmap/ic_run"/>
     <item
         android:id="@+id/item2"
-        android:title="Progress"
+        android:title="Прогресс"
         android:icon="@mipmap/ic_run"/>
     <item
         android:id="@+id/item3"
-        android:title="Settings"
+        android:title="Настройки"
         android:icon="@mipmap/ic_run"/>
 
 

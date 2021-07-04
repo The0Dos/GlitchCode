@@ -39,7 +39,7 @@ public class SliderAdapter extends PagerAdapter {
 
             "На протяжении обучения вам будет помогать робот, вам точно не будет скучно!",
             "Вы всегда сможете посмотреть на какой уровне ваши знания информационной безопасности!",
-            "С каждым пройденным уровнем будет открываться новый элемент пазла!"
+            "С каждым пройденным уровнем будет открываться новый элемент улучшения робота!"
     };
 
 
@@ -64,6 +64,8 @@ public class SliderAdapter extends PagerAdapter {
         ImageView slideImageView = (ImageView) view.findViewById(R.id.im);
         TextView slideHeading = (TextView) view.findViewById(R.id.tv1);
         TextView slideDesc = (TextView) view.findViewById(R.id.tv2);
+        slideHeading.setFontFeatureSettings(String.valueOf(R.font.font_main));
+        slideDesc.setFontFeatureSettings(String.valueOf(R.font.font_main));
 
         slideImageView.setImageResource(slide_images[position]);
         slideHeading.setText(slide_headings[position]);

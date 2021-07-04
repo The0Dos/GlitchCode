@@ -6,12 +6,12 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 
-public class puzzle_ac extends AppCompatActivity {
+public class puzzle3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_puzzle);
+        setContentView(R.layout.activity_puzzle3);
     }
 
     public void setLand(View view) {

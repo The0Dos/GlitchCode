@@ -8,6 +8,7 @@
     android:background="@drawable/back_main">
 
     <LinearLayout
+        android:layout_marginBottom="40dp"
         android:id="@+id/line1"
         android:layout_width="match_parent"
         android:gravity="center"
@@ -20,7 +21,7 @@
             android:layout_weight="1"
             android:focusable="true"
             android:clickable="true"
-            android:background="@drawable/btn_back_red"
+            android:background="@drawable/btn_shape"
             android:textSize="30sp"
             android:textColor="@android:color/white"
             android:padding="10dp"
@@ -28,21 +29,21 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/dislike"
-            android:text="нет"
+            android:text="да"
             android:layout_margin="5dp"/>
         <TextView
             android:gravity="center"
             android:layout_weight="1"
             android:focusable="true"
             android:clickable="true"
-            android:background="@drawable/btn_back_red"
+            android:background="@drawable/btn_shape"
             android:textSize="30sp"
             android:textColor="@android:color/white"
             android:padding="10dp"
             android:fontFamily="@font/font_main"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="да"
+            android:text="нет"
             android:layout_margin="5dp"
             android:id="@+id/like"/>
 
